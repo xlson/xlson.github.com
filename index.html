@@ -1,0 +1,20 @@
+---
+layout: default
+title: Leonard Axelsson
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  
+  <h1>Projects</h1>
+  <ul class="posts">
+    <li><a href="http://github.com/xlson/csv-parser/">csv-parser</a> A simple csv-parser library for groovy.</li>
+    <li><a href="http://github.com/xlson/tomcat-valves/">tomcat-valves:</a> Custom utility valves for Tomcat 6.</li>
+ </ul>
+</div>
+  
