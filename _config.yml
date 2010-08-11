@@ -1,3 +1,4 @@
 server: true
 server_port: 4080
 auto: true
+lsi: true
