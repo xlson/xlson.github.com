@@ -22,12 +22,28 @@ body {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-size: 100%;
+}
+
+h2 {
+  font-size: 95%;
+}
+
+h3, h4, h5, h6 {
+  font-size: 90%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 10px;
 }
 
 h1 {
   margin-bottom: 1em;
+}
+
+strong {
+  font-size: 90%;
 }
 
 blockquote {
