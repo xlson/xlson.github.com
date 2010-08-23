@@ -32,6 +32,18 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+  var pageTracker = _gat._getTracker(UA-5619963-3');
+  pageTracker._trackPageview();
+</script>
+
+<script type="text/javascript">
+function recordOutboundLink(link, category, action) {
+  try {
+    var pageTracker=_gat._getTracker("UA-5619963-3");
+    pageTracker._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
 </script>
 <!-- TRACKING CODE FOR GOOGLE ANALYTICS -->
 
@@ -55,8 +67,8 @@
     </div>
     <div class="contact">
       <p>
-        <a href="http://github.com/xlson/">github.com/xlson</a><br />
-        <a href="http://twitter.com/xlson/">twitter.com/xlson</a><br />
+        <a href="http://github.com/xlson/" onClick="recordOutboundLink(this, 'Outbound Links', 'github.com');return false;">github.com/xlson</a><br />
+        <a href="http://twitter.com/xlson/" onClick="recordOutboundLink(this, 'Outbound Links', 'twitter.com');return false;">twitter.com/xlson</a><br />
       </p>
     </div>
  </div>
