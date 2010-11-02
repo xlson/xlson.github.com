@@ -1,4 +1,5 @@
-server: true
+server: false
 server_port: 4080
-auto: true
+auto: false
 lsi: false
+exclude: build.gradle gradle.properties

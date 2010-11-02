@@ -1,1 +1,3 @@
 _site/*
+.gradle/*
+gradle.properties
