@@ -1,12 +1,12 @@
 ---
 layout: post
-title: GroovyCSV 0.2 Released!
+title: GroovyCSV 0.2 Released
 ---
 
 {{ page.title }}
 =========
 
-The first final release of GroovyCSV is out! Also, it's up on Maven Central which should make it a lot easier to get. There have been some minor changes to the API since I posted about csv-parser [the first time](http://xlson.com/2010/08/17/introducing-csv-parser.html) but the biggest change is probably the new name and package structure.
+The first final release of Groovys very own CSV parsing library is out. Also, it's up on Maven Central which should make it a lot easier to get. There have been some minor changes to the API since I posted about csv-parser [the first time](http://xlson.com/2010/08/17/introducing-csv-parser.html) but the biggest change is probably the new name and package structure.
 
 ## Changes since 0.1
 
@@ -44,6 +44,5 @@ Or you can download it from Github:
 
 ## More information
 
-* [Source](http://github.com/xlson/groovycsv)
-* [Javadoc](http://xlson.github.com/groovycsv/docs/0.2/javadoc/index.html)
+* [Source & Readme](http://github.com/xlson/groovycsv)
 * [Issue tracker](http://github.com/xlson/groovycsv/issues)
