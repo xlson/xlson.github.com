@@ -29,6 +29,11 @@ Because GroovyCSV is now up on Maven Central it's really easy to use in your Gro
         println "$line.Name $line.Lastname"
     }
 
+### Output
+
+    Mark Anderson-Nielsen
+    Pete Hansen
+
 ## Getting GroovyCSV
 
 GroovyCSV is available from Maven Central with the following information:
@@ -46,3 +51,8 @@ Or you can download it from Github:
 
 * [Source & Readme](http://github.com/xlson/groovycsv)
 * [Issue tracker](http://github.com/xlson/groovycsv/issues)
+
+## One last thing
+
+I'd love to hear from you if you're using GroovyCSV, especially
+suggestions on improvements and bug reports. Keep the feedback coming! :)
