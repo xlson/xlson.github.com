@@ -50,6 +50,7 @@ Or you can download it from Github:
 ## More information
 
 * [Source & Readme](http://github.com/xlson/groovycsv)
+* [Javadoc](http://xlson.github.com/groovycsv/docs/0.2/javadoc)
 * [Issue tracker](http://github.com/xlson/groovycsv/issues)
 
 ## One last thing
