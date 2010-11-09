@@ -77,7 +77,7 @@ Create a file named `demo.markdown` in your repo and add the following
 content:
 
     ---
-    title: This will be used as the <title> of the page
+    title: This will be used as the title-tag of the page head
     ---
     
     # This is a H1
