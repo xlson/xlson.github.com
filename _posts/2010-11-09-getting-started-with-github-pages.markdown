@@ -71,7 +71,7 @@ the page branch.
 ## Templating using Markdown
 
 We're just about finished, but I'm going to cover one more thing,  and
-that's how to create use the [Markdown](http://daringfireball.net/projects/markdown/) templating system.
+that's how to use the [Markdown](http://daringfireball.net/projects/markdown/) templating system.
 
 Create a file named `demo.markdown` in your repo and add the following
 content:
