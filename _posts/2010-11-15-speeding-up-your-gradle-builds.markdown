@@ -38,4 +38,12 @@ Add  `-Dorg.gradle.daemon=true` to your `GRADLE_OPTS`, in my case this meant add
 
 This is the same as adding `--daemon` every time you run gradle. There is also a `--no-daemon` flag that you can use when you'd like to disable it explicitly.
 
+## Potential issues
+
+I've already noticed that I have some builds that don't use the
+`projectDir`property that is available in all Gradle builds and
+therefor (incorrectly) run tasks in `~/.gradle/` instead of the
+project directory. This is easily fixed but might be worth checking.
+
+
 The latest release (0.9-rc3) is available over at [gradle.org](http://gradle.org/).
