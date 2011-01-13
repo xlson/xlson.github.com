@@ -19,8 +19,8 @@ for some time. Couch with it's ability to bundle a webapp with the
 database and simple replication (backup!?) seems like a potentially
 great fit for bookmarks in the cloud. Said and done, when it seemed like
 Delicious was going away I took the step out into the wild with
-[Jan-Piet Mens CouchApp
-Scrumptious](http://blog.fupps.com/2010/05/25/truly-scrumptious-bookmarks-in-couchdb/).
+Jan-Piet Mens CouchApp
+[Scrumptious](http://blog.fupps.com/2010/05/25/truly-scrumptious-bookmarks-in-couchdb/).
 
 As the icing on the cake it's possible to get the bookmarks back into
 the cloud using Scrumptious with a free hosted database from
@@ -31,15 +31,24 @@ CouchOne. Read on to learn how.
 ![Scrumptious UI on CouchOne](/images/scrumptious.png)
 
 As it happens, I'm not the first person that thought CouchDB would be
-a good place to put bookmarks. Jan-Piet Mens has
+a good place to put bookmarks. [Jan-Piet Mens](http://twitter.com/jpmens) has
 already created a [CouchApp](http://couchapp.org/page/index) called Scrumptious. Scrumptious is a
 web-application that lives inside CouchDB.
 
-**Scrumptious comes with the following features:**
+**Scrumptious features:**
 * Bookmarklet for saving bookmarks
-* Listing bookmarks
+* Listing bookmarks by date or tag
 * Export as bookmarks html for import into the browser of your choice
 * Inline-editing of bookmarks
+
+### A word of warning
+
+Scrumptious is a cool app but it's in no way ready for non-techies (as
+you will probably figure out during the install, if not earlier). The
+bookmarklet doesn't work in Firefox 3.x currently and the
+search-functionality isn't finished. Scrumptious also lacks all of the
+social functionality of Delicious. If this puts you off maybe you'd be
+better off looking at something like [Pinboard](http://pinboard.in/) or [Tagli.us](http://tagli.us/).
 
 ## Getting started with Scrumptious in the cloud
 
