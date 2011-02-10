@@ -1,0 +1,59 @@
+---
+layout: post
+title: GroovyCSV 0.2 Released
+---
+
+{{ page.title }}
+=========
+
+The first final release of Groovys very own CSV parsing library is out. Also, it's up on Maven Central which should make it a lot easier to get. There have been some minor changes to the API since I posted about csv-parser [the first time](http://xlson.com/2010/08/17/introducing-csv-parser.html) but the biggest change is probably the new name and package structure.
+
+## Changes since 0.1
+
+* Project renamed from csv-parser to GroovyCSV (new package-structure `com.xlson.groovycsv`)
+* Explicit `close()` method has been addsed to `com.xlson.groovycsv.CsvIterator`
+
+## Example using @Grab and custom separator
+
+Because GroovyCSV is now up on Maven Central it's really easy to use in your Groovy scripts. This example shows how you can make GroovyCSV available using `@Grab` as well as how you can use custom separators and quote character.
+
+    @Grab('com.xlson.groovycsv:groovycsv:0.2')
+    import com.xlson.groovycsv.CsvParser
+    
+    def csv = '''Name-Lastname
+    Mark-'Anderson-Nielsen'
+    Pete-Hansen'''
+    
+    def data = new CsvParser().parse(csv, separator: '-', quoteChar: "'")
+    for(line in data) {
+        println "$line.Name $line.Lastname"
+    }
+
+### Output
+
+    Mark Anderson-Nielsen
+    Pete Hansen
+
+## Getting GroovyCSV
+
+GroovyCSV is available from Maven Central with the following information:
+
+    Group: com.xlson.groovycsv
+    Artifact: groovycsv
+    Version: 0.2
+
+Or you can download it from Github:
+
+* [groovycsv-0.2.jar](https://github.com/downloads/xlson/groovycsv/groovycsv-0.2.jar)
+* [groovycsv-0.2-javadoc.jar](https://github.com/downloads/xlson/groovycsv/groovycsv-0.2-javadoc.jar)
+
+## More information
+
+* [Source & Readme](http://github.com/xlson/groovycsv)
+* [Javadoc](http://xlson.github.com/groovycsv/docs/0.2/javadoc)
+* [Issue tracker](http://github.com/xlson/groovycsv/issues)
+
+## One last thing
+
+I'd love to hear from you if you're using GroovyCSV, especially
+suggestions on improvements and bug reports. Keep the feedback coming! :)

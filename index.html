@@ -1,0 +1,50 @@
+---
+layout: default
+title: Leonard Axelsson
+---
+
+<script type="text/javascript">
+  function recordOutboundLink(link, category, action) {
+    try {
+      var myTracker=_gat._getTrackerByName();
+      _gaq.push(['myTracker._trackEvent', ' + category + ', ' + action + ']);
+      setTimeout('document.location = "' + link.href + '"', 100)
+    }catch(err){}
+  }
+</script>
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <div class="twitter"> 
+    <div id="twitter_div"> 
+      <h1 class="sidebar-title">Tweets</h1> 
+      <ul id="twitter_update_list" class="twitter"></ul> 
+      <a href="http://twitter.com/xlson" id="twitter-link"
+    style="display:block;text-align:right;" onClick="recordOutboundLink(this, 'Outbound Links', 'twitter.com/xlson');return false;">follow me on Twitter</a> 
+    </div> 
+  </div>
+  <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script> 
+  <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/xlson.json?callback=twitterCallback2&amp;count=5"></script>
+
+  
+  <h1>Projects</h1>
+  <ul class="posts">
+    <li><a href="http://github.com/xlson/groovycsv/"
+  onClick="recordOutboundLink(this, 'Outbound Links',
+  'github.com/xlson/groovycsv');return false;">GroovyCSV:</a> A
+  simple CSV parsing library for groovy.</li>
+  <li><a href="http://github.com/xlson/standalone-war/"
+  onClick="recordOutboundLink(this, 'Outbound Links',
+  'github.com/xlson/standalone-war');return
+  false;">standalone-war:</a> A Gradle build that packages a war file
+  with an embedded Jetty container.</li>
+    <li><a href="http://github.com/xlson/tomcat-valves/" onClick="recordOutboundLink(this, 'Outbound Links', 'github.com/xlson/tomcat-valves');return false;">tomcat-valves:</a> Custom utility valves for Tomcat 6.</li>
+ </ul>
+</div>
+  

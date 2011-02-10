@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>{{ page.title }}</title>
+   <meta name="author" content="Leonard Axelsson" />
+
+   <!-- rss feed from feedburner -->
+   <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/LeonardAxelsson" />
+
+  <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+
+<!-- TRACKING CODE FOR GOOGLE ANALYTICS -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5619963-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- TRACKING CODE FOR GOOGLE ANALYTICS -->
+
+</head>
+<body>
+
+<div class="site">
+  <div class="title">
+    <a href="/">Leonard Axelsson</a>
+    <a class="extra" href="/">home</a>
+  </div>
+  
+  {{ content }}
+  
+  <div class="footer">
+    <div class="contact">
+      <p>
+        Leonard Axelsson<br />
+        Co-Founder of <a href="http://groups.google.com/group/swegug" onClick="recordOutboundLink(this, 'Outbound Links', 'groups.google.com/group/swegug');return false;">SweGUG</a><br />
+        leo@xlson.com
+      </p>
+    </div>
+    <div class="contact">
+      <p>
+        <a href="http://github.com/xlson/" onClick="recordOutboundLink(this, 'Outbound Links', 'github.com/xlson');return false;">github.com/xlson</a><br />
+        <a href="http://twitter.com/xlson/" onClick="recordOutboundLink(this, 'Outbound Links', 'twitter.com/xlson');return false;">twitter.com/xlson</a><br />
+        <a href="http://se.linkedin.com/in/leonardaxelsson"
+    onClick="recordOutboundLink(this, 'Outbound Links',
+    'se.linkedin.com/in/leonardaxelsson');return false;">LinkedIn Profile</a><br />
+      </p>
+    </div>
+    <div class="rss"> 
+      <a href="http://feeds.feedburner.com/LeonardAxelsson"> 
+        <img src="/images/rss.png" alt="Subscribe to RSS Feed" /> 
+      </a> 
+    </div>
+ </div>
+</div>
+
+<a href="http://github.com/xlson" onClick="recordOutboundLink(this, 'Outbound Links', 'github.com/xlson');return false;"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+
+<!-- DISQUS COMMENT TRACKING CODE -->
+<script type="text/javascript">
+var disqus_shortname = 'xlson';
+(function () {
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'http://disqus.com/forums/xlson/count.js';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+<!-- DISQUS COMMENT TRACKING CODE -->
+
+</body>
+</html>
