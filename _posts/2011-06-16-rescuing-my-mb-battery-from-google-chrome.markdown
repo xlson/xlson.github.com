@@ -22,3 +22,9 @@ Problem solved, I'm back to using Google Chrome again, without any
 issues. Big thanks to Cody Krieger for the excellent gfxCardStatus app.
 
 If you're interested in gfxCardStatus you can find it [here](http://codykrieger.com/gfxCardStatus).
+
+### Update
+
+There's actually an [issue](http://code.google.com/p/chromium/issues/detail?id=43138) about this on the Chromium issue tracker, it's marked as "Won't fix". I can only summize that the Chromium guys doen't care about their users. At the same time, neither Safari or Firefox has this issue so they can't claim it to be unfixable.
+
+I'm really dissapointed about how this has been handled and I really hope they come to change their minds.
