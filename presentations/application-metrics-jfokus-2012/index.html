@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>We came, we visualized, we changed</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/custom_style.css" type="text/css"/>
+  
+
+  
+    <script type="text/javascript" src="file/custom_script.js"></script>
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="intro/01_title">
+<h1>We visualized</h1>
+
+<h1>We saw</h1>
+
+<h1>We changed</h1></div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="intro/020_speakers/1">
+<h1>Speaker</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="intro/020_speakers/2">
+<h1>Leonard Axelsson</h1>
+
+<ul>
+<li>Developer/Operations at Mojang</li>
+<li>Co-Founder of SweGuG</li>
+<li>Speaker at Dyncon, Jfokus, Javaforum and others</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="intro/020_speakers/3">
+<p><img src="./file/intro/minecraft.net.png" alt="background"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="intro/020_speakers/4">
+<p><img src="./file/intro/account.png" alt="background"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="intro/020_speakers/5">
+<p><img src="./file/intro/mojang.com.png" alt="background"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/020_speakers/6">
+<p><img src="./file/intro/minecraft-game.png" alt="background"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="reality/010-a-look-at-normality/1">
+<h1>What's the state of your application?</h1>
+
+<p class="notes">I'd like to start by asking you to think about what you know
+about the state of your application. What's happening? What are your
+users doing? How do you get information about it?</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="reality/010-a-look-at-normality/2">
+<p><img src="./file/reality/problem-tweet.png" alt="problem-tweet"/></p>
+
+<p class="notes">you might get it from a user, sadly not that uncommon</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="reality/010-a-look-at-normality/3">
+<p>or your</p>
+
+<h1>boss complaining</h1>
+
+<p class="notes">you might even have your pointy haired boss come over to bash
+his hand into your desk and start shouting about a problem</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="reality/010-a-look-at-normality/4">
+<h1>Hopefully an alarm</h1>
+
+<p><img src="./file/reality/pingdom-alarm.png" alt="pingdom-alarm"/></p>
+
+<p class="notes">or in most cases, you get an alarm from your monitoring system
+telling you that your site is down.</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="reality/010-a-look-at-normality/5">
+<h1>Is that enough?</h1>
+
+<p class="notes">now, my question to you is: is that really enough? Isn't that a
+bit late to know what's happening in the application?</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="reality/010-a-look-at-normality/6">
+<p><img src="./file/reality/noc.jpg" alt="background"/></p>
+
+<p class="notes">default operations with green and red buttons for when things
+are working and not. cpu, memory, 200 codes from web apps</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="reality/010-a-look-at-normality/7">
+<p><img src="./file/reality/graphite-browser-image.png" alt="background"/></p>
+
+<p class="notes">graphs over realtime data of application centric information
+such as logins, transactions messages added to a queue</p></div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="reality/020-what-is-application-monitoring/1">
+<h1>The difference</h1>
+
+<p class="notes">diff kinds, alarms vs application centric data and graphs -&gt; meaning</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="reality/020-what-is-application-monitoring/2">
+<h1>Application metrics</h1>
+
+<p><img src="./file/reality/logins-graph.png" alt="logins graph"/></p>
+
+<p class="notes">things like: logins/minute or payment transactions. Tells you
+about your application.</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="reality/020-what-is-application-monitoring/3">
+<h1>Getting to know your app</h1>
+
+<p><img src="./file/reality/logins-graph.png" alt="logins graph"/></p>
+
+<p class="notes">brain pattern matching, see trends, learn about the application
+and how it behaves. Looking at the data every morning, what my users
+are doing.</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="reality/020-what-is-application-monitoring/4">
+<h1>The watercooler effect</h1>
+
+<p><img src="./file/reality/watercooler.jpg" alt="gather round"/></p>
+
+<p class="notes">app metrics -&gt; other people are curious. pretty -&gt; even more
+people are curious. even biz that asks what something app centric means</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="reality/020-what-is-application-monitoring/5">
+<h1>A common language</h1>
+
+<p class="notes">the graphs acts as a facility to create a common ground. As
+people from different parts of the organization looks at it. example:
+perf issue, apparent by graph. Esp since he already knows it.</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="reality/020-what-is-application-monitoring/6">
+<p>but</p>
+
+<h1>I'm a developer</h1>
+
+<p class="notes">you should know your application. To know it -&gt; put through its
+motions and see what happens.</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="reality/020-what-is-application-monitoring/7">
+<h1>Start early</h1>
+
+<ul>
+<li>finding your vital metrics takes time</li>
+</ul>
+
+
+<p class="notes">going live is to late, won't watch appcentric data and won't
+know how the app works. Ops keep stuff running and probably won't
+learn it, at least not very quickly. You need to add metrics early to
+learn the app and to learn what metrics are vital to YOUR application.</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="reality/020-what-is-application-monitoring/8">
+<h1>Requirements in development</h1>
+
+<ul>
+<li>do load testing</li>
+<li>(preferrably) involvement in production</li>
+</ul>
+
+
+<p class="notes">if you have users, you should see what happens when the app is
+run by those users. If you have more than 10 users, you should watch
+vital app metrics, your understanding of the app probably won't be
+enough.</p></div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="graphite/010-a-tool/1">
+<h1>A tool</h1>
+
+<p class="notes">use whatever you finds works the best for you - there's no
+silver bullets</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="graphite/010-a-tool/2">
+<h1>Graphite</h1>
+
+<p><img src="./file/graphite/graphite-components.png" alt="graphite components"/></p>
+
+<p class="notes">Easy as setting up a python webapp, All OpenSource, Made to
+scale. Been extremely easy to use with a minimal amount of configuration.</p></div>
+</div><div class="slide" data-transition="none"><div class="content code smaller" ref="graphite/020-collection">
+<h1>"Hello metric"</h1>
+
+<p>(Python)</p>
+
+<pre class="sh_python"><code>import time
+import socket
+def collect_metric(name, value, timestamp):
+    sock = socket.socket()
+    sock.connect( ("localhost", 2003) )
+    sock.send("%s %d %d\n" % (name, value, timestamp))
+    sock.close()
+
+def now():
+    int(time.time())
+
+collect_metric("meaning.of.life", 42, now())</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="graphite/030-composer">
+<h1><a href="http://localhost:2280/">graphite demo</a></h1>
+
+<p class="notes">Apply a function, nonNegativeDerivative, talk about composability, how different data can be combined easily</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="ending/010_final_words/1">
+<p>looking at application metrics means</p>
+
+<h1>you will learn</h1>
+
+<p>what to watch</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="ending/010_final_words/2">
+<h1>Get to know your application</h1>
+
+<h1>today</h1></div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="ending/999-attributions">
+<h1>Attributions</h1>
+
+<h2>Images</h2>
+
+<p><a href="http://www.flickr.com/photos/suckamc/2881752547/">Big Brother</a>
+<a href="http://www.flickr.com/photos/mogwai_83/3022261893">Noc</a>
+<a href="http://www.flickr.com/photos/sophistechate/2758739495">Concerns</a>
+<a href="http://www.flickr.com/photos/stebulus/231058538/">Blunt tools</a>
+<a href="http://www.flickr.com/photos/wetwebwork/483601441/">Gather round</a>
+<a href="http://www.flickr.com/photos/kh-67/4476573711">Thirst</a>
+<a href="http://www.flickr.com/photos/ncindc/3229050640">Confidence</a>
+<a href="http://www.flickr.com/photos/marcwathieu/4074496908">Behaviour</a>
+<a href="http://www.flickr.com/photos/27620885@N02/2634223296">Design</a>
+<a href="http://www.flickr.com/photos/tk-link/2575598759">Testing</a>
+<a href="http://www.flickr.com/photos/tk-link/2575598759">Start monitoring</a>
+<a href="http://www.flickr.com/photos/theilr/6657436995">Demo Time</a></p>
+
+<h2>Thanks</h2>
+
+<p>The team at Entraction (IGT)</p>
+
+<p>M&#xE5;rten Gustafson</p>
+
+<p>Ville Sv&#xE4;rd (Agical)</p></div>
+</div></div>
+
+</body>
+</html>

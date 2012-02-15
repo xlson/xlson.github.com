@@ -1,0 +1,38 @@
+
+
+.content {
+    color: #0D6FFC;
+}
+h1, h2 {
+    color: #17A2E5;
+    font-family: Georgia;
+}
+body.fullScreen {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.subsection h1{
+    background: #0D6FFC;
+    color: black;
+}
+
+#preso, .slide {
+  border: none !important;
+  background-color: black;
+
+}
+
+#preso a:visited {
+    color: #0D6FFC;
+}
+
+#preso a:link {
+    color: #0D6FFC;
+}
+
