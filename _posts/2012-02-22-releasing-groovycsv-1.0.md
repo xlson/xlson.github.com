@@ -1,7 +1,7 @@
 ---
 title: Releasing GroovyCSV 1.0
 layout: post
-published: false
+published: true
 ---
 
 {{ page.title }}
