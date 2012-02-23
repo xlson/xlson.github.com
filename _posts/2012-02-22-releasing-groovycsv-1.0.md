@@ -8,7 +8,7 @@ published: true
 ================
 
 When GroovyCSV 0.2 was released back in [November of
-2011](http://xlson.com/2010/11/08/groovycsv-0.2-released.html) I
+2010](http://xlson.com/2010/11/08/groovycsv-0.2-released.html) I
 thought it might actually be the final release, at the time I couldn't think
 of anything else to add. Still, calling a first release 1.0 is the
 same as asking for trouble.
