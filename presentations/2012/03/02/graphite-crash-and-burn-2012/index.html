@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Graphite - The village pump of your team</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/custom_style.css" type="text/css"/>
+  
+
+  
+    <script type="text/javascript" src="file/custom_script.js"></script>
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="intro/intro/1">
+<h1>Graphite</h1>
+
+<h2>The village pump of your team</h2></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="intro/intro/2">
+<h1>Speakers</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="intro/intro/3">
+<h1>Leonard Axelsson</h1>
+
+<ul>
+<li>Developer/Operations at Mojang</li>
+<li><img src="./file/intro/mojang.png" alt="mojang"/></li>
+</ul>
+
+
+<p>@xlson</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="intro/intro/4">
+<h1>Ville Sv&#xE4;rd</h1>
+
+<ul>
+<li>Consultant, programmer, architect, tester, ...</li>
+<li><img src="./file/intro/agical_small_logo.png" alt="agical"/></li>
+</ul>
+
+
+<p>@villesv</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/intro/5">
+<h2>Behaviour</h2>
+
+<h2>Language</h2>
+
+<h2>Perception</h2>
+
+<p class="notes">At the core (of agility), different kinds</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="intro/intro/6">
+<h1>Three chapters</h1>
+
+<ul>
+<li>A story</li>
+<li>A tool</li>
+<li>Observations and benefits</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="our_story/010_a-monitoring-story/1">
+<h1>A story of monitoring</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="our_story/010_a-monitoring-story/2">
+<h1>Is your team performing?</h1>
+
+<p><img src="./file/our_story/big_brother.jpg" alt="watching you"/></p>
+
+<p class="notes">getting metrics out of your team?</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="our_story/010_a-monitoring-story/3">
+<h1>How about your product?</h1>
+
+<p><img src="./file/our_story/noc.jpg" alt="noc"/></p>
+
+<p class="notes">in fact, how well do you know your product?</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="our_story/010_a-monitoring-story/4">
+<h1>How will you know?</h1>
+
+<p class="notes">feedback from users, ops, testing?</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="our_story/010_a-monitoring-story/5">
+<p>Once upon a time at
+<img src="./file/our_story/entraction_logga.png" alt="entraction"/></p>
+
+<p class="notes">consultants, working as developer and tester</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="our_story/010_a-monitoring-story/6">
+<h1>We had a problem</h1>
+
+<p><img src="./file/our_story/concerns.jpg" alt="concerns"/></p>
+
+<p class="notes">We wanted to settle concerns about stability and
+performance for a new application about to be integrated in a legacy environment</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="our_story/020-blunt-tools">
+<h1>Blunt tools</h1>
+
+<p><img src="./file/our_story/blunt_tools.jpg" alt="blunt tools"/></p>
+
+<p class="notes">Subject kept popping up, much labor to settle it (to our satisfaction) every time
+From the heart of the application
+Lack "depth" Lack reliability/repeatability
+Involve manual labor Provide slow feedback
+MBeans/JConsole =&gt; No mining, unreliable
+Cron/CSV/Excel =&gt; Hard to repeat, much work, error prone</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="our_story/030-a-hero-emerges/1">
+<h1>A hero emerges</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="our_story/030-a-hero-emerges/2">
+<h1>Graphite</h1>
+
+<ul>
+<li>Set up</li>
+<li>Collect</li>
+<li>Presto!</li>
+</ul>
+
+
+<p class="notes">Half a day trying it out, Three simple/relevant metrics at the end of the day, Data avalailable =&gt; pursue further!</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="our_story/030-a-hero-emerges/3">
+<p><img src="./file/our_story/graphite-browser-image.png" alt="dashboard"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="our_story/030-a-hero-emerges/4">
+<h1>Water cooler effect</h1>
+
+<p>an immediate side effect</p>
+
+<p><img src="./file/our_story/gather_round.jpg" alt="gather round"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="our_story/030-a-hero-emerges/5">
+<h1>Out of the darkness</h1>
+
+<p class="notes">shared understanding and language?</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="our_story/030-a-hero-emerges/6">
+<h1>And so it went on</h1>
+
+<p class="notes">used in testing, verified improvements, helped proof the prod env.</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="our_story/050-we-had-help">
+<h1>Lone heroes are a myth</h1>
+
+<ul>
+<li>Tools</li>
+<li>Environment</li>
+<li>Team</li>
+</ul>
+
+
+<p class="notes">Monitoring proj req. by PO/Ops, Access to load testing for a long time, curious team</p></div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="graphite/010-a-tool/1">
+<h1>A tool</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="graphite/010-a-tool/2">
+<h1>Graphite</h1>
+
+<p><img src="./file/graphite/graphite-components.png" alt="graphite components"/></p>
+
+<p class="notes">Easy as setting up a python webapp, All OpenSource, Made to scale</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="graphite/020-collection/1">
+<h1>"getting the data in"</h1>
+
+<p class="notes">Graphite does not do it for you, but it is really easy</p></div>
+</div><div class="slide" data-transition="none"><div class="content code smaller" ref="graphite/020-collection/2">
+<h1>"Hello metric"</h1>
+
+<p>(Python)</p>
+
+<pre class="sh_python"><code>import time
+import socket
+def collect_metric(name, value, timestamp):
+    sock = socket.socket()
+    sock.connect( ("localhost", 2003) )
+    sock.send("%s %d %d\n" % (name, value, timestamp))
+    sock.close()
+
+def now():
+    int(time.time())
+
+collect_metric("meaning.of.life", 42, now())</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content code smaller" ref="graphite/020-collection/3">
+<h1>"Hello metric"</h1>
+
+<p>(Clojure)</p>
+
+<pre class="sh_clojure"><code>(import [java.net Socket]
+        [java.io PrintWriter]))
+
+(defn write-metric [name value timestamp]
+  (with-open [socket (Socket. "localhost" 2003)
+              os (.getOutputStream socket)]
+    (binding [*out* (PrintWriter. os)]
+      (println name value timestamp))))
+
+(defn now []
+  (int (/ (System/currentTimeMillis) 1000)))
+
+(write-metric "meaning.of.life" 42 (now))</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="graphite/025-demo">
+<p><img src="./file/graphite/juggling_fire.jpg" alt="demo time"/></p>
+
+<p>[ demo time ]</p>
+
+<p class="notes">Apply a function, nonNegativeDerivative, talk about composability, how different data can be combined easily</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="graphite/030-what-did-you-see/1">
+<h1>"making sense"</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="graphite/030-what-did-you-see/2">
+<h1>Instant availability</h1>
+
+<p class="notes">Watching changes take effect immediately</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="graphite/030-what-did-you-see/3">
+<h1>Sharing is caring...</h1>
+
+<p class="notes">Availability over http =&gt; huge benefit</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="graphite/030-what-did-you-see/4">
+<h1>Data retention</h1>
+
+<p class="notes">Historic data for comparison and regression</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="graphite/030-what-did-you-see/5">
+<h1>Pulling metrics</h1>
+
+<p><img src="./file/graphite/metrics-architecture-II.png" alt="metrics_architecture"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="graphite/030-what-did-you-see/6">
+<h1>Pushing metrics</h1>
+
+<p><img src="./file/graphite/metrics-architecture-mojang.png" alt="metrics architecture mojang"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content subsection" ref="observations_theories_benefits/010_observations/1">
+<h1>Observations</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="observations_theories_benefits/010_observations/2">
+<h1>Thirst for knowledge</h1>
+
+<p><img src="./file/observations_theories_benefits/thirst.jpg" alt="thirst"/></p>
+
+<p class="notes">need for metrics, notice missing info, eagerness to retest/deploy, experimentation</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="observations_theories_benefits/010_observations/3">
+<h1>Familiarity with behaviour</h1>
+
+<p><img src="./file/observations_theories_benefits/behaviour.jpg" alt="behaviour"/></p>
+
+<p class="notes">easily spot trends/errors, don't panic, spotted prod. HW problems</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="observations_theories_benefits/010_observations/4">
+<h1>Increased confidence</h1>
+
+<p><img src="./file/observations_theories_benefits/confidence.jpg" alt="confidence"/></p>
+
+<p class="notes">outspoken within the team, outside (graph as fact), history as reference</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="observations_theories_benefits/010_observations/5">
+<h1>Influence on design</h1>
+
+<p><img src="./file/observations_theories_benefits/design.jpg" alt="design"/></p>
+
+<p class="notes">at least one feature not impl., metrics show when/where improvement needed (or not)</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="observations_theories_benefits/010_observations/6">
+<h1>A tool for testing</h1>
+
+<p><img src="./file/observations_theories_benefits/testing.jpg" alt="testing"/></p>
+
+<p class="notes">data as reference when "composing" is easy!, regressions using historic data</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="observations_theories_benefits/010_observations/7">
+<h1>Starting early</h1>
+
+<p><img src="./file/observations_theories_benefits/start_monitoring.jpg" alt="start monitoring"/></p>
+
+<p class="notes">start in development, silos, ready for prod.</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="observations_theories_benefits/040_benefits/1">
+<h1>Collaborative benefits</h1>
+
+<p>Nurturing conversation with data</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="observations_theories_benefits/040_benefits/2">
+<h1>The water cooler effect</h1>
+
+<ul>
+<li>Graphs attract audience</li>
+<li>Natural talking matter</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="observations_theories_benefits/040_benefits/3">
+<h1>The team</h1>
+
+<ul>
+<li>Curing blindness</li>
+<li>Making better decisions</li>
+</ul>
+
+
+<p class="notes">(with data as guide)</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="observations_theories_benefits/040_benefits/4">
+<h1>Stakeholders</h1>
+
+<ul>
+<li>Sparking curiosity</li>
+<li>Shared understanding</li>
+</ul>
+
+
+<p class="notes">-Oh what is that? Quite ready yet? Shared decision making!
+what influences perf., associate names with data</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="observations_theories_benefits/040_benefits/5">
+<h1>Managers</h1>
+
+<ul>
+<li>Information as leverage</li>
+</ul>
+
+
+<p class="notes">changing procedures, investment in infrastructure</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="ending/010_final_words/1">
+<h1>Behaviour</h1>
+
+<h1>Language</h1>
+
+<h1>Perception</h1>
+
+<p class="notes">We started with a monitoring tool, we got so much more</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="ending/010_final_words/2">
+<h1>Get to know your application</h1>
+
+<h1>today!</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="ending/010_final_words/3">
+<h2>Ville Sv&#xE4;rd</h2>
+
+<p>ville.svard@agical.com | @villesv</p>
+
+<h2>Leonard Axelsson</h2>
+
+<p>leo@xlson.com | @xlson</p></div>
+</div><div class="slide" data-transition="none"><div class="content small" ref="ending/999-attributions">
+<h1>Attributions</h1>
+
+<h2>Images</h2>
+
+<p><a href="http://www.flickr.com/photos/suckamc/2881752547/">Big Brother</a>
+<a href="http://www.flickr.com/photos/mogwai_83/3022261893">Noc</a>
+<a href="http://www.flickr.com/photos/sophistechate/2758739495">Concerns</a>
+<a href="http://www.flickr.com/photos/stebulus/231058538/">Blunt tools</a>
+<a href="http://www.flickr.com/photos/wetwebwork/483601441/">Gather round</a>
+<a href="http://www.flickr.com/photos/kh-67/4476573711">Thirst</a>
+<a href="http://www.flickr.com/photos/ncindc/3229050640">Confidence</a>
+<a href="http://www.flickr.com/photos/marcwathieu/4074496908">Behaviour</a>
+<a href="http://www.flickr.com/photos/27620885@N02/2634223296">Design</a>
+<a href="http://www.flickr.com/photos/tk-link/2575598759">Testing</a>
+<a href="http://www.flickr.com/photos/tk-link/2575598759">Start monitoring</a>
+<a href="http://www.flickr.com/photos/theilr/6657436995">Demo Time</a></p>
+
+<h2>Thanks</h2>
+
+<p>The team at Entraction (IGT)</p>
+
+<p>M&#xE5;rten Gustafson</p></div>
+</div></div>
+
+</body>
+</html>
