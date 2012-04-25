@@ -1,7 +1,6 @@
 ---
 title: Deploying Minecraft.net in 14 minutes, no way
 layout: post
-published: false
 ---
 
 {{ page.title }}
