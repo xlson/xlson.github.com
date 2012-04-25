@@ -64,11 +64,11 @@ the dependencies command and pushed the deployment time down to ~1 minute.
 
 ## Benefits and cost
 
-It took me 2 days to do this, which is ~960 minutes (8 * 2 * 60). We do roughly 10 deploys each
+It took me 2 days to do this, which is ~960 minutes (8 * 2 * 60). We do roughly 5 deploys each
 week, perhaps even more now that they are quicker. This means we'll
-save roughly 130 minutes ((14-1) * 10) each week, or 585 minutes
-(130 * 4.5) in a month. Given this we can see that the time spent on
-making the deploys faster will be recuperated in less than 2 months.
+save roughly 65 minutes ((14-1) * 5) each week, or 292.5 minutes
+(65 * 4.5) in a month. Given this we can see that the time spent on
+making the deploys faster will be recuperated in ~3 months.
 
 More importantly, I can now do deploys more lightheartedly as I know
 it will only take a short period of my my time. Deploying even the
